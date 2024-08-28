@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Анкета</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Анкета skifsky.github.io</h1>
+            <p id="description">Заполните анкету — поделитесь вашим мнением о сайте!</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <fieldset>
+                    <legend>Основная информация</legend>
+
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Вотер Потассиумович" required />
+                
+                    <label for="email">Ваша электронная почта:</label>
+                    <input type="email" id="email" name="email" placeholder="waterpotassiumovich@email.com" required />
+                
+                    <label for="number">Ваш возраст (необязательно):</label>
+                    <input type="number" id="number" name="age" min="13" max="99" placeholder="18" />
+            
+                    <label for="dropdown">Какой вариант лучше всего описывает вашу нынешнюю роль?</label>
+                    <select id="dropdown" name="role" required>
+                        <option value="" disabled selected>Выберите нынешнюю роль</option>
+                        <option value="student">Студент</option>
+                        <option value="worker">Работник</option>
+                        <option value="apprentice">Ученик</option>
+                        <option value="prefer-not-to-say">Предпочитаю не указывать</option>
+                        <option value="other">Другое</option>
+                    </select>
+
+                    <label for="bio">Расскажите о себе: </label>
+                    <textarea id="bio" name="bio" placeholder="Я люблю кодить..."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Посоветовали ли бы вы этот сайт друзьям?</legend>
+                    
+                    <label for="definitely"><input class="input-radio" type="radio" name="recommend" id="definitely" value="definitely" checked />Определённо</label>
+                    <label for="maybe"><input class="input-radio" type="radio" name="recommend" id="maybe" value="maybe" />Возможно</label>
+                    <label for="no"><input class="input-radio" type="radio" name="recommend" id="no" value="no"/>Точно нет</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Что вам хотелось бы улучшить? <small>(отметьте всё, что применимо)</small></legend>
+                    
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="frontend" />Фронтенд-проекты</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="backend" />Бекенд-проекты</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="data-visualization" />Визуализация данных</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="challenges" />Испытания</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="open-source" />Open-source Сообщество</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="gitter" />Справочный отдел Gitter</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="videos" />Видео</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="city-meetups" />Городские встречи</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="wiki" />Вики</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="forum" />Форум</label>
+                    <label><input class="input-checkbox" type="checkbox" name="improvement" value="courses" />Дополнительные курсы</label>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Отправить" />
+            </form>
+        </main>
+        <footer>
+            <p>skifsky.github.io, 2024 — No Copyright</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+/* BODY SELECTOR */
+body {
+    background-color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: bisque;
+}
+
+/* MAIN SELECTOR */
+
+h1, h2, p {
+    text-align: center;
+}
+
+hr {
+    color: bisque;
+    width: 50%;
+}
+
+/* REFERENCES */
+
+a {
+    color: beige;
+}
+  
+a:visited {
+    color: bisque;
+}
+  
+a:hover {
+    color: aquamarine;
+}
+  
+a:active {
+    color: aqua;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Регистрационная форма</h1>
+    <p>Пожалуйста, заполните эту форму необходимой информацией</p>
+    <form method="post" action="https://skifsky.github.io/">
+      <fieldset>
+        <label for="first-name">Введите ваше имя: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Введите вашу фамилию: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Введите адрес вашей электронной почты: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Придумайте пароль: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Вид аккаунта (обязательно)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Личный</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Бизнес</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Загрузите фото профиля: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Введите ваш возраст (лет): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">Как вы узнали про нас?
+          <select id="referrer" name="referrer">
+            <option value="">(выберите одно)</option>
+            <option value="1">Новости</option>
+            <option value="2">Ютуб</option>
+            <option value="3">Форум</option>
+            <option value="4">Другое</option>
+          </select>
+        </label>
+        <label for="bio">Расскажите о себе:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Я люблю кодить на пляже..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

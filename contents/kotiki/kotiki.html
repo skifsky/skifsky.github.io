@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Котики</title>
+    </head>
+    <body>
+        <main>
+            <h1>Котики</h1>
+            <section>
+              <h2>Фото котят</h2>
+              <!-- TODO: Add link to cat photos -->
+              <p>Больше <a target="_blank" href="https://skifsky.github.io/">фото котиков</a> в галерее.</p>
+              <a href="https://skifsky.github.io/"><img src="cat.png" alt="UwU."></a>
+            </section>
+            <section>
+              <h2>Кошачьи списки</h2>
+              <h3>Вещи, которые котики любят:</h3>
+              <ul>
+                <li>кошачья мята</li>
+                <li>лазерные указки</li>
+                <li>лазанья</li>
+              </ul>
+              <figure>
+                <img src="lasagna.png" alt="A slice of lasagna.">
+                <figcaption>Котики <em>любят</em> лазанью.</figcaption>  
+              </figure>
+              <h3>Топ 3 вещей, которые котики ненавидят:</h3>
+              <ol>
+                <li>лечение блох</li>
+                <li>гроза</li>
+                <li>другие котики</li>
+              </ol>
+              <figure>
+                <img src="manycats.png" alt="Many UwUs.">
+                <figcaption>Котики <strong>ненавидят</strong> других котиков.</figcaption>  
+              </figure>
+            </section>
+            <section>
+              <h2>Кошачий опросник</h2>
+              <form action="https://skifsky.github.io/">
+                <fieldset>
+                  <legend>Ваша кошка живёт в помещении или на улице?</legend>
+                  <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> В помещении</label>
+                  <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> На улице</label>
+                </fieldset>
+                <fieldset>
+                  <legend>Какой характер у вашей кошки?</legend>
+                  <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Любящая</label>
+                  <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Ленивая</label>
+                  <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Энергичная</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button type="submit">Принять</button>
+              </form>
+            </section>
+        </main>
+        <footer>
+            <p>
+              No Copyright - <a href="https://skifsky.github.io/">skifsky.github.io</a>
+            </p>
+        </footer>
+    </body>
+</html>
