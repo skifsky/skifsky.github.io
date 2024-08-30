@@ -5,8 +5,15 @@ body {
     color: bisque;
 }
 
-/* MAIN SELECTOR */
+/* HEADER SELECTOR */
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    border: 2px solid bisque;
+}
 
+/* MAIN SELECTOR */
 h1, h2, p {
     text-align: center;
 }
@@ -16,8 +23,17 @@ hr {
     width: 50%;
 }
 
-/* REFERENCES */
+/* FOOTER SELECTOR*/
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.copyright {
+    font-style: italic;
+}
+
+/* REFERENCES */
 a {
     color: beige;
 }
