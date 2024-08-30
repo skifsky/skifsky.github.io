@@ -1,0 +1,90 @@
+/* GENERAL SELECTORS */
+
+html {
+    background-color: whitesmoke;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 2% 1%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+/* TITLE SELECTORS */
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* IMAGE SELECTORS */
+
+.image {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 2% 0 0.1rem 0;
+    margin: 0 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image figcaption {
+    margin: 1rem 10%;
+}
+
+.image img {
+    max-width: 100%;
+    display: block;
+}
+
+.image > figcaption > span {
+    font-style: italic;
+} 
+
+/* BIOGRAPHY SELECTORS */
+
+h3 {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.biography {
+    margin: auto 25%;
+}
+
+ul > li {
+    margin: 1rem auto;
+    line-height: 1.5;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 2rem auto;
+}
+
+/* REFERNCE SELECTOR */
+
+a {
+    color: whitesmoke;
+}
+
+a:active {
+    color:lightsteelblue;
+}
+
+a:hover {
+    color: lightsteelblue;
+}
+
+a:visited {
+    color: lightsteelblue;
+}
