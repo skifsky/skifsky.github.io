@@ -1,15 +1,16 @@
 /* GENERAL SELECTORS */
 
 html {
-    background-color: whitesmoke;
+    background-color: #F0F0F5; /* Немного более тёмный оттенок для контраста */
 }
 
 body {
-    background-color: rgb(235, 235, 235);
+    background-color: #FFFFFF; /* Белый цвет для более чистого вида */
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 2% 1%;
     border: 2px solid transparent;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень вокруг страницы */
 }
 
 /* TITLE SELECTORS */
@@ -35,6 +36,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Тень вокруг изображения */
 }
 
 .image figcaption {
@@ -55,6 +59,8 @@ body {
 h3 {
     text-align: center;
     margin: 3rem auto;
+    font-weight: 600;
+    font-size: 1.25rem;
 }
 
 .biography {
@@ -63,28 +69,32 @@ h3 {
 
 ul > li {
     margin: 1rem auto;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 
 blockquote {
     font-style: italic;
     margin: 2rem auto;
+    font-size: 1.2rem;
+    color: #555;
 }
 
 /* REFERNCE SELECTOR */
 
 a {
-    color: whitesmoke;
-}
-
-a:active {
-    color:lightsteelblue;
-}
-
-a:hover {
-    color: lightsteelblue;
+    color: #0077FF; 
+    text-decoration: none;
 }
 
 a:visited {
-    color: lightsteelblue;
+    color: #0055CC;
+}
+
+a:hover {
+    color: #33A1FF;
+    text-decoration: underline; 
+}
+
+a:active {
+    color: #003399;
 }
